@@ -1,0 +1,33 @@
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 68px;
+  right: 0;
+  background-color: $color-brand-light;
+  flex-direction: column;
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  &.active {
+    display: flex;
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+.mobile-links {
+  padding: 76px 15px;
+}
+
+.mobile-link {
+  font-size: 18px;
+  cursor: pointer;
+  padding-bottom: 50px;
+  &:hover {
+    color: $color-brand-dark;
+  }
+}

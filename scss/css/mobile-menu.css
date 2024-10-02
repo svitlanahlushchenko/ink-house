@@ -1,0 +1,17 @@
+.mobile-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 68px;
+}
+.mobile-menu.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  padding: 16px;
+}/*# sourceMappingURL=mobile-menu.css.map */

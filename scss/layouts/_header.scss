@@ -1,0 +1,68 @@
+.header {
+  &__container {
+    background-color: $color-brand-light;
+    padding: 0 15px;
+    @media screen and (min-width: $bp-mobile) {
+      padding: 0 33px;
+    }
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      gap: 60px;
+      align-items: center;
+      padding: 0 38px;
+      justify-content: space-between;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      padding: 0 165px;
+    }
+  }
+  &__logo {
+    max-width: 144px;
+    padding: 16px 0;
+    margin: 0 auto;
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0;
+    }
+  }
+  &__mobile-header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 15px 0;
+    margin: 0;
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      gap: 60px;
+      align-items: center;
+      padding: 18px 0;
+    }
+  }
+  &__mobile-header::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 90%;
+    top: 0;
+    background-color: $color-secondary-light-grey;
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+  &__icon {
+    fill: $color-secondary-grey;
+  }
+  &__menu {
+    display: none;
+    @media screen and (min-width: $bp-mobile) {
+      display: flex;
+      gap: 60px;
+    }
+    &__link {
+      font-size: 18px;
+      cursor: pointer;
+      &:hover {
+        color: $color-brand-dark;
+      }
+    }
+  }
+}
