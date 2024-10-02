@@ -2,6 +2,10 @@
   fill: $color-secondary-grey;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  &:hover {
+    fill: $color-brand-dark;
+  }
   &.active {
     display: none;
   }
@@ -17,4 +21,8 @@
   border: none;
   cursor: pointer;
   padding: 0;
+  fill: $color-secondary-grey;
+  &:hover {
+    fill: $color-brand-dark;
+  }
 }

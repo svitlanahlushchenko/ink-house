@@ -58,6 +58,10 @@ li {
   fill: #4c5866;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+}
+.burger-button:hover {
+  fill: #376b44;
 }
 .burger-button.active {
   display: none;
@@ -76,6 +80,10 @@ li {
   border: none;
   cursor: pointer;
   padding: 0;
+  fill: #4c5866;
+}
+.close-menu:hover {
+  fill: #376b44;
 }
 
 .container {
@@ -162,6 +170,10 @@ li {
 }
 .header__icon {
   fill: #4c5866;
+  cursor: pointer;
+}
+.header__icon:hover {
+  fill: #376b44;
 }
 .header__menu {
   display: none;

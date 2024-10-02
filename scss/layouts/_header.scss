@@ -50,6 +50,10 @@
   }
   &__icon {
     fill: $color-secondary-grey;
+    cursor: pointer;
+    &:hover {
+      fill: $color-brand-dark;
+    }
   }
   &__menu {
     display: none;
