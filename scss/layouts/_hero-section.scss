@@ -74,6 +74,10 @@
     border: 1px solid $color-brand-middle;
     background-color: transparent;
     padding: 15px 41px;
+    &:hover {
+      color: $color-brand-light;
+      background-color: $color-brand-middle;
+    }
     @media screen and (min-width: $bp-tablet) {
       padding: 18px 50px;
     }
